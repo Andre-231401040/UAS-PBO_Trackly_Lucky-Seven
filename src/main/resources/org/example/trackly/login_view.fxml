@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trackly.controller.LoginController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="650.0" prefWidth="640.0" style="-fx-background-color: #4682B4;" HBox.hgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" text="T R A C K L Y" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="64.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="650.0" prefWidth="640.0" style="-fx-background-color: #FFFFFF;" HBox.hgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" text="Welcome Back" textAlignment="CENTER" textFill="STEELBLUE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="40.0" />
+                    </font>
+             <VBox.margin>
+                <Insets bottom="45.0" />
+             </VBox.margin>
+                </Label>
+                <!-- Email -->
+                <HBox alignment="CENTER" prefWidth="517.0">
+                      <TextField fx:id="emailField" prefHeight="48.0" prefWidth="400.0" promptText="Email" style="-fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #D1D5DB; -fx-border-width: 1; -fx-padding: 8 12;">
+                          <font>
+                              <Font name="Segoe UI" size="14.0" />
+                          </font>
+                      </TextField>
+             <VBox.margin>
+                <Insets bottom="32.0" />
+             </VBox.margin>
+                </HBox>
+
+                <!-- Password -->
+                <HBox alignment="CENTER">
+                      <PasswordField fx:id="passwordField" prefHeight="48.0" prefWidth="400.0" promptText="Password" style="-fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #D1D5DB; -fx-border-width: 1; -fx-padding: 8 12;">
+                          <font>
+                              <Font name="Segoe UI" size="14.0" />
+                          </font>
+                      </PasswordField>
+             <VBox.margin>
+                <Insets bottom="32.0" />
+             </VBox.margin>
+                </HBox>
+                   <Button mnemonicParsing="false" onAction="#handleLogin" prefHeight="48.0" prefWidth="400.0" style="-fx-background-color: #4682B4; -fx-background-radius: 8;" text="Login" textFill="WHITE">
+                       <font>
+                           <Font name="Segoe UI Bold" size="16.0" />
+                       </font>
+                   </Button>
+
+                <!-- Button + Register -->
+                <HBox alignment="CENTER">
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Don’t have an account?">
+                          <font>
+                              <Font name="Segoe UI" size="14.0" />
+                          </font>
+                      </Text>
+                      <Hyperlink fx:id="registerLink" onAction="#goToRegister" text="Register">
+                          <font>
+                              <Font name="System Bold" size="13.0" />
+                          </font>
+             </Hyperlink>
+             <VBox.margin>
+                <Insets top="32.0" />
+             </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>

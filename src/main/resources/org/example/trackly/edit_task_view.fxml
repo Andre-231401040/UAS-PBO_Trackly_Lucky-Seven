@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" style="-fx-background-color: white; -fx-background-radius: 4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trackly.controller.EditTaskController">
+    <children>
+        <VBox prefHeight="1024.0" prefWidth="250.0" style="-fx-background-color: #F9FAFB;">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="300.0">
+                    <children>
+                        <Pane prefHeight="200.0">
+                            <children>
+                                <ImageView fx:id="sidebarProfileImageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                                    <clip>
+                                        <Circle centerX="50" centerY="50" radius="50" />
+                                    </clip>
+                                </ImageView>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="12.0" />
+                            </HBox.margin>
+                        </Pane>
+                        <Label fx:id="sidebarNameLabel" text="Andre">
+                            <font>
+                                <Font name="Segoe UI Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <VBox prefHeight="400.0" prefWidth="100.0" spacing="16.0" style="-fx-background-color: #F9FAFB;">
+                    <VBox.margin>
+                        <Insets top="32.0" />
+                    </VBox.margin>
+                    <children>
+                        <Hyperlink fx:id="taskList" onAction="#navigationHandler" style="-fx-text-fill: #4682B4; -fx-border-color: transparent;" text="Task List">
+                            <font>
+                                <Font name="Segoe UI Bold" size="18.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink fx:id="todo" onAction="#navigationHandler" style="-fx-text-fill: #9CA3AF; -fx-border-color: transparent;" text="To-Do">
+                            <font>
+                                <Font name="Segoe UI Bold" size="18.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink fx:id="completed" onAction="#navigationHandler" style="-fx-text-fill: #9CA3AF; -fx-border-color: transparent;" text="Completed">
+                            <font>
+                                <Font name="Segoe UI Bold" size="18.0" />
+                            </font>
+                        </Hyperlink>
+                        <Hyperlink fx:id="setting" onAction="#navigationHandler" style="-fx-text-fill: #9CA3AF; -fx-border-color: transparent;" text="Settings">
+                            <font>
+                                <Font name="Segoe UI Bold" size="18.0" />
+                            </font></Hyperlink>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+        <VBox prefHeight="1024.0" prefWidth="1030.0" style="-fx-background-color: white;">
+            <children>
+                <Label text="Edit Task">
+                    <font>
+                        <Font name="Segoe UI Bold" size="48.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+                <VBox>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label text="Title">
+                                    <font>
+                                        <Font name="Segoe UI Bold" size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <TextField fx:id="titleField" prefHeight="45.0" promptText="Title" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: #D1D5DB; -fx-border-radius: 5;">
+                                    <font>
+                                        <Font name="Segoe UI" size="16.0" />
+                                    </font>
+                                </TextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="16.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0">
+                            <children>
+                                <Label text="Description">
+                                    <font>
+                                        <Font name="Segoe UI Bold" size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <TextField fx:id="descriptionField" prefHeight="45.0" promptText="Description" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: #D1D5DB; -fx-border-radius: 5;">
+                                    <font>
+                                        <Font name="Segoe UI" size="16.0" />
+                                    </font>
+                                </TextField>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="16.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <HBox>
+                            <children>
+                                <RadioButton fx:id="withDeadlineRadio" text="With deadline">
+                                    <font>
+                                        <Font name="Segoe UI" size="16.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="20.0" />
+                                    </HBox.margin>
+                                </RadioButton>
+                                <RadioButton fx:id="noDeadlineRadio" text="No deadline">
+                                    <font>
+                                        <Font name="Segoe UI" size="16.0" />
+                                    </font>
+                                </RadioButton>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="16.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <VBox layoutX="10.0" layoutY="100.0">
+                            <children>
+                                <Label text="Deadline">
+                                    <font>
+                                        <Font name="Segoe UI Bold" size="18.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <HBox fx:id="deadlineContainer">
+                                    <children>
+                                        <DatePicker fx:id="deadlineDatePicker" prefHeight="45.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: #D1D5DB; -fx-border-radius: 5;">
+                                            <HBox.margin>
+                                                <Insets right="20.0" />
+                                            </HBox.margin>
+                                        </DatePicker>
+                                        <TextField fx:id="hourField" prefHeight="45.0" prefWidth="150.0" promptText="Hours" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: #D1D5DB; -fx-border-radius: 5;">
+                                            <font>
+                                                <Font name="Segoe UI" size="16.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="20.0" />
+                                            </HBox.margin>
+                                        </TextField>
+                                        <TextField fx:id="minuteField" layoutX="330.0" layoutY="10.0" prefHeight="45.0" prefWidth="150.0" promptText="Minutes" style="-fx-background-color: white; -fx-border-width: 2; -fx-border-color: #D1D5DB; -fx-border-radius: 5;">
+                                            <font>
+                                                <Font name="Segoe UI" size="16.0" />
+                                            </font>
+                                        </TextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="16.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <Button fx:id="saveButton" onAction="#handleEditTask" mnemonicParsing="false" style="-fx-text-fill: white; -fx-background-color: #4682B4; -fx-border-width: 0; -fx-background-radius: 7;" text="Save Changes">
+                            <padding>
+                                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Segoe UI Bold" size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="28.0" left="28.0" right="28.0" top="28.0" />
+            </padding></VBox>
+    </children>
+</HBox>

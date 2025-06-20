@@ -12,8 +12,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.Button?>
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" style="-fx-background-color: white; -fx-background-radius: 4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trackly.controller.TodoController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" style="-fx-background-color: white; -fx-background-radius: 4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trackly.controller.CompletedController">
     <children>
         <VBox prefHeight="1024.0" prefWidth="250.0" style="-fx-background-color: #F9FAFB;">
             <children>
@@ -48,12 +47,12 @@
                                 <Font name="Segoe UI Bold" size="18.0" />
                             </font>
                         </Hyperlink>
-                        <Hyperlink fx:id="todo" onAction="#navigationHandler" style="-fx-text-fill: #4682B4; -fx-border-color: transparent;" text="To-Do">
+                        <Hyperlink fx:id="todo" onAction="#navigationHandler" style="-fx-text-fill: #9CA3AF; -fx-border-color: transparent;" text="To-Do">
                             <font>
                                 <Font name="Segoe UI Bold" size="18.0" />
                             </font>
                         </Hyperlink>
-                        <Hyperlink fx:id="completed" onAction="#navigationHandler" style="-fx-text-fill: #9CA3AF; -fx-border-color: transparent;" text="Completed">
+                        <Hyperlink fx:id="completed" onAction="#navigationHandler" style="-fx-text-fill: #4682B4; -fx-border-color: transparent;" text="Completed">
                             <font>
                                 <Font name="Segoe UI Bold" size="18.0" />
                             </font>
@@ -71,7 +70,7 @@
         </VBox>
         <VBox prefHeight="1024.0" prefWidth="1030.0" style="-fx-background-color: white;">
             <children>
-                <Label text="To-Do Task">
+                <Label text="Completed Task">
                     <font>
                         <Font name="Segoe UI Bold" size="48.0" />
                     </font>
@@ -79,44 +78,17 @@
                         <Insets />
                     </VBox.margin>
                 </Label>
-                  <HBox>
-                      <children>
-                          <Button fx:id="onTrackButton" onAction="#handleOnTrackClick" style="-fx-background-color: #4682B4; -fx-background-radius: 7; -fx-underline: false;" text="On track" textFill="WHITE">
-                              <HBox.margin>
-                                  <Insets right="28.0" />
-                              </HBox.margin>
-                              <font>
-                                  <Font name="Segoe UI Bold" size="18.0" />
-                              </font>
-                              <padding>
-                                  <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
-                              </padding>
-                          </Button>
-                          <Button fx:id="overdueButton" onAction="#handleOverdueClick" style="-fx-border-width: 2; -fx-border-color: #4682B4; -fx-border-radius: 7; -fx-underline: false;" text="Overdue" textFill="STEELBLUE">
-                              <font>
-                                  <Font name="Segoe UI Bold" size="18.0" />
-                              </font>
-                              <padding>
-                                  <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
-                              </padding>
-                          </Button>
-                      </children>
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-                  </HBox>
-                <ScrollPane maxHeight="500.0" style="-fx-background-insets: 10;">
-                    <content>
-                        <VBox fx:id="toDoListContainer" prefWidth="974.0" style="-fx-background-color: #ffffff;">
-                            <children>
-
-                            </children>
-                        </VBox>
-                    </content>
-                    <VBox.margin>
-                        <Insets top="20.0" />
-                    </VBox.margin>
-                </ScrollPane>
+                  <ScrollPane maxHeight="500.0" style="-fx-background-insets: 10;">
+                      <content>
+                          <VBox fx:id="completedListContainer" prefWidth="974.0" style="-fx-background-color: #ffffff;">
+                              <children>
+                              </children>
+                          </VBox>
+                      </content>
+                      <VBox.margin>
+                          <Insets top="40.0" />
+                      </VBox.margin>
+                  </ScrollPane>
             </children>
             <padding>
                 <Insets bottom="28.0" left="28.0" right="28.0" top="28.0" />
