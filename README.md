@@ -13,15 +13,15 @@ Tujuan pembuatan Trackly adalah untuk membantu pengguna mengatur aktivitas haria
 
 **Fitur - Fitur Utama TRACKLY**
 
-Sign up : Pengguna baru dapat mendaftar dengan membuat akun menggunakan username, password dan email.
-Login : Pengguna yang sudah terdaftar dapat masuk menggunakan akun mereka untuk mengakses data To-Do List Pribadi.
-Edit Profil : Pengguna bisa edit profil seperti ubah nama pengguna, foto, dan nomor handphone.
-Tambah To-Do : Pengguna dapat menambahkan tugas baru ke dalam daftar pada halaman Task List. Untuk menambahkan to-do baru, pengguna akan diminta untuk mengisi judul, deskripsi dan memilih apakah tugas memiliki deadline atau tidak . Jika tugas memiliki deadline, deadline dapat ditambahkan dengan memilih tanggal dan waktu dari calendar view.
-Tandai Sebagai Selesai : Pengguna dapat menandai tugas yang sudah selesai dengan menekan ikon centang pada bagian kanan bawah pada halaman To-Do.
-Tandai Sebagai Belum Selesai : Pengguna dapat menandai tugas sebagai belum selesai kembali dengan menekan ikon undo pada bagian kanan bawah tiap task di halaman Completed.
-Filter To-Do : Pengguna dapat memfilter task yang masih belum melewati tenggat waktu dan yang sudah melewati tenggat waktu di halaman To-Do.
-Edit To-Do : Pengguna dapat mengedit tugas yang telah ada di daftar dengan menekan ikon pensil pada halaman Task List.
-Hapus To-Do : Pengguna dapat menghapus tugas dari daftar dengan menekan ikon tong sampah di halaman Task List.
+1. Sign up : Pengguna baru dapat mendaftar dengan membuat akun menggunakan username, password dan email.
+2. Login : Pengguna yang sudah terdaftar dapat masuk menggunakan akun mereka untuk mengakses data To-Do List Pribadi.
+3. Edit Profil : Pengguna bisa edit profil seperti ubah nama pengguna, foto, dan nomor handphone.
+4. Tambah To-Do : Pengguna dapat menambahkan tugas baru ke dalam daftar pada halaman Task List. Untuk menambahkan to-do baru, pengguna akan diminta untuk mengisi judul, deskripsi dan memilih apakah tugas memiliki deadline atau tidak . Jika tugas memiliki deadline, deadline dapat ditambahkan dengan memilih tanggal dan waktu dari calendar view.
+5. Tandai Sebagai Selesai : Pengguna dapat menandai tugas yang sudah selesai dengan menekan ikon centang pada bagian kanan bawah pada halaman To-Do.
+6. Tandai Sebagai Belum Selesai : Pengguna dapat menandai tugas sebagai belum selesai kembali dengan menekan ikon undo pada bagian kanan bawah tiap task di halaman Completed.
+7. Filter To-Do : Pengguna dapat memfilter task yang masih belum melewati tenggat waktu dan yang sudah melewati tenggat waktu di halaman To-Do.
+8. Edit To-Do : Pengguna dapat mengedit tugas yang telah ada di daftar dengan menekan ikon pensil pada halaman Task List.
+9. Hapus To-Do : Pengguna dapat menghapus tugas dari daftar dengan menekan ikon tong sampah di halaman Task List.
 
 **Cara Menjalankan Aplikasi Trackly**
 
