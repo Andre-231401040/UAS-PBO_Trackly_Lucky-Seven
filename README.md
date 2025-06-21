@@ -30,3 +30,4 @@ Tujuan pembuatan Trackly adalah untuk membantu pengguna mengatur aktivitas haria
 3. Setelah selesai, maka aplikasi dapat dijalankan melalui Main.java.
 
 **Link Presentasi YouTube**
+<a href="https://youtu.be/Yi1MZCeUULk">Link Video Presentasi</a>
